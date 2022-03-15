@@ -1,6 +1,6 @@
 # Flutter Ui Template app
 
-A food delivery app build with flutter
+Some Ui build with flutter
 
 ## Screenshots
 
