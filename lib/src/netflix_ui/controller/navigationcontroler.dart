@@ -10,56 +10,64 @@ class NavigationController extends GetxController {
 
    CarouselController carouselController = new CarouselController();
   var current = 0.obs;
-
+ var isliked = false.obs;
+var liked =[false,true,false,false,false,true,false].obs;
   List<dynamic> movies = [
     {
       'title': 'Black Widow',
-      'image': 'assets/Blackwidow2.jpeg',
+      'image': 'assets/movie/Blackwidow2.jpeg',
       'mark': '3.0',
       'isgood':true,
-      'quality':"Popular"
+      'quality':"Popular",
+      'isliked':false,
     },
     {
       'title': 'The Suicide Squad',
-      'image': 'assets/Suicide_Squad_The.webp',
+      'image': 'assets/movie/Suicide_Squad_The.webp',
       'mark': '5.0',
       'isgood':false,
-      'quality':""
+      'quality':"",
+      'isliked':false,
     },
     {
       'title': 'Godzilla Vs Kong',
-      'image': 'assets/godzilla.jpeg',
+      'image': 'assets/movie/godzilla.jpeg',
       'mark': '4.5',
       'isgood':false,
-      'quality':""
+      'quality':"",
+      'isliked':false,
     },
      {
       'title': 'The Bridgerton',
-      'image': 'assets/bridgertoncover.jpeg',
+      'image': 'assets/movie/bridgertoncover.jpeg',
       'mark': '4.5',
       'isgood':true,
-      'quality':"New Movie"
+      'quality':"New Movie",
+      'isliked':false,
     },
      {
       'title': 'Avengers',
-      'image': 'assets/avengers.webp',
+      'image': 'assets/movie/avengers.webp',
       'mark': '5.0',
       'isgood':false,
-      'quality':""
+      'quality':"",
+      'isliked':false,
     },
      {
-      'title': 'Zone hostile',
-      'image': 'assets/zonehostile.jpg',
+      'title': 'Outside the Wire',
+      'image': 'assets/movie/zonehostile.jpg',
       'mark': '4.5',
       'isgood':false,
-      'quality':""
+      'quality':"",
+      'isliked':false,
     },
      {
       'title': 'Squid game',
-      'image': 'assets/sg_main_img.jpeg',
+      'image': 'assets/movie/sg_main_img.jpeg',
       'mark': '4.5',
       'isgood':false,
-      'quality':""
+      'quality':"",
+      'isliked':false,
     },
     
   ];

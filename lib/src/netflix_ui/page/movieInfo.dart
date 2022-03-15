@@ -1,5 +1,7 @@
+import 'package:bouncing_widget/bouncing_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:ui_template/src/netflix_ui/widget/instruction_dialog.dart';
 
 class MovieInfo extends StatelessWidget {
   const MovieInfo({Key? key}) : super(key: key);
@@ -15,7 +17,7 @@ class MovieInfo extends StatelessWidget {
                    width: MediaQuery.of(context).size.width,
                   
                  
-                 child: Image.asset("assets/squidgamecover.jpg", fit: BoxFit.cover),
+                 child: Image.asset("assets/movie/squidgamecover.jpg", fit: BoxFit.cover),
                  )),
                  Expanded(child: Container( decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(15), 
@@ -29,10 +31,15 @@ class MovieInfo extends StatelessWidget {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
-                          CircleAvatar(maxRadius: 35,
-                          backgroundColor: Colors.orangeAccent,
-                          child: Center(child: Icon(Iconsax.play_circle5,
-                          color: Colors.white,size: 30,),),
+                           BouncingWidget(
+                              onPressed: (){
+       Instruction_dialog( context);
+      },
+                            child: CircleAvatar(maxRadius: 35,
+                            backgroundColor: Colors.orangeAccent,
+                            child: Center(child: Icon(Iconsax.play_circle5,
+                            color: Colors.white,size: 30,),),
+                            ),
                           ),
                         ],
                       ),
@@ -80,16 +87,16 @@ class MovieInfo extends StatelessWidget {
       ),
        Padding(
          padding: const EdgeInsets.all(8.0),
-         child: Text("Four Hundred and fifty six people, all of whom are struggling financially in life , are invited to play a mysterious survival competition.Compete in a series of traditional's children's games but with deadly twists",style: TextStyle(color: Colors.white,fontSize: 15),),
+         child: Text("Four Hundred and fifty six people, all of whom are struggling financially in life , are invited to play a mysterious survival competition.Compete in a series of traditional's children's games but with deadly twists.",style: TextStyle(color: Colors.white,fontSize: 15),),
        ),
                                
       Padding(
         padding: const EdgeInsets.only(left:8.0),
         child: Row(
                                 children: [
-                                  Text("Director :",style: TextStyle(color: Colors.orangeAccent,fontSize: 17,),),
+                                  Text("Director :",style: TextStyle(color: Colors.orangeAccent,fontSize: 15,),),
                                 SizedBox(width: 3,),
-                                Text("Hwang Dong-hyuk",style: TextStyle(color: Colors.white,fontSize: 17),),
+                                Text("Hwang Dong-hyuk",style: TextStyle(color: Colors.white,fontSize: 15),),
                                 ],
                               ),
       ),
@@ -97,9 +104,9 @@ class MovieInfo extends StatelessWidget {
                               padding: const EdgeInsets.all(8.0),
                               child: Row(
                                 children: [
-                                  Text("Writers :",style: TextStyle(color: Colors.orangeAccent,fontSize: 17,),),
+                                  Text("Writers :",style: TextStyle(color: Colors.orangeAccent,fontSize: 15,),),
                                 SizedBox(width: 3,),
-                                Text("Hwang Dong-hyuk",style: TextStyle(color: Colors.white,fontSize: 17),),
+                                Text("Hwang Dong-hyuk",style: TextStyle(color: Colors.white,fontSize: 15),),
                                 ],
                               ),
                             ),

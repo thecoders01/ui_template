@@ -74,7 +74,7 @@ class Carousel_widget extends StatelessWidget {
                               children: [
                                 Icon(Icons.star, color: Colors.orangeAccent, size: 20,),
                                 SizedBox(width: 5),
-                                Text(movie['mark'], style: TextStyle(
+                                Text(movie['mark'], style: const TextStyle(
                                   fontSize: 14.0,
                                   color: Colors.white
                                 ),)

@@ -29,6 +29,7 @@ class Allmovie extends StatelessWidget {
           isgood: navigationController.movies[index]["isgood"],
           description:navigationController.movies[index]["quality"],
           mark:navigationController.movies[index]["mark"] ,
+          isliked :index
           );
         }
         ),

@@ -1,15 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:ui_template/src/netflix_ui/widget/fav_button.dart';
 
 class Grid_widget extends StatelessWidget {
   final String img;
   final String name;
   final String mark;
   final bool isgood;
+  final int isliked;
   final String description;
   const Grid_widget({Key? key,
   required this.img,  
    required this.name, 
    required this.isgood, 
+   required this.isliked, 
     required this.mark, 
    required this.description, 
   }) : super(key: key);
@@ -19,7 +22,7 @@ class Grid_widget extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(left:58.0,right: 58.0,bottom: 8),
       child: Container(
-       // color: Colors.red,
+      // color: Colors.red,
          height: 360,
           // width: 160,
 
@@ -51,6 +54,9 @@ height: 20,
                    ),
                  ):Container()
                ),
+               Align(alignment: Alignment.topRight,
+                       child: fav_button(isliked),
+                       ),
                  Align(
                    alignment: Alignment.center,
                    child: Container(
