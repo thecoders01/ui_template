@@ -40,6 +40,9 @@ dependencies:
   iconsax:
   line_icons:
   flutter_layout_grid:
+  sliding_up_panel:
+  dotted_border: 
+  story_view: 
 
 dev_dependencies:
   flutter_test:
@@ -67,6 +70,7 @@ flutter:
   assets:
      - assets/movie/
      - assets/screenshots/
+     - assets/whatsapp/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
