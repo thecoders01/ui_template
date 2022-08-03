@@ -42,7 +42,11 @@ dependencies:
   flutter_layout_grid:
   sliding_up_panel:
   dotted_border: 
-  story_view: 
+  story_view:
+  font_awesome_flutter:
+  google_fonts:
+  dots_indicator:
+  cupertino_progress_bar: 
 
 dev_dependencies:
   flutter_test:
@@ -71,6 +75,8 @@ flutter:
      - assets/movie/
      - assets/screenshots/
      - assets/whatsapp/
+     - assets/netflix/
+
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

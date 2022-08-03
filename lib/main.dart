@@ -2,12 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:ui_template/src/Whatsapp_app/controller/navigationcontroller.dart';
 import 'package:ui_template/src/Whatsapp_app/screen/homepage.dart';
+import 'package:ui_template/src/movie_app/controller/navigationcontroler.dart';
+import 'package:ui_template/src/movie_app/page/homepage.dart';
 import 'package:ui_template/src/netflix_ui/controller/navigationcontroler.dart';
 import 'package:ui_template/src/netflix_ui/page/layout_movie.dart';
 
 void main() {
-  Get.put(NavController());
-  runApp(const MyApp());
+
+ WidgetsFlutterBinding.ensureInitialized();
+  Get.put(NetflixNavigationController());
+  runApp(const MyApp()); 
 }
 
 class MyApp extends StatelessWidget {
@@ -23,7 +27,7 @@ class MyApp extends StatelessWidget {
        
         primarySwatch: Colors.blue,
       ),
-      home: Homepage()
+      home: Netflix_Homepage()
     );
   }
 }
